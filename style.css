@@ -191,3 +191,23 @@ a:hover {
     box-shadow: 2px 3px 10px 1px #3A3F45
  !important;
 }
+
+.submit-btn{
+    background-color: #37A1F7;
+    color: white;
+    border: #37A1F7;
+    width: 50rem;
+}
+
+.message{
+    margin-top: 2.5rem;
+}
+
+.control{
+    margin-left: 17rem;
+    width: 50rem;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
