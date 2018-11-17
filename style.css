@@ -5,7 +5,24 @@
     color: #F8F9FA !important;
 }
 @media only screen and (max-width: 600px) {
-
+    .is128px {
+        font-size: 3rem;
+    }
+    .is64px {
+        font-size: 1.5rem;
+    }
+    .parallax {
+        background-attachment: fixed;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        width: 100vw;
+        max-width:100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
 }
 @media only screen and (min-width: 600px) {
     .is128px {
@@ -14,6 +31,17 @@
     .is64px {
         font-size: 4rem;
     }
+    .parallax {
+        background-attachment: fixed;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        width: 100vw;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
 }
 
 
@@ -21,19 +49,9 @@
 
 #hidden {
 }
-.parallax {
-    background-attachment: fixed;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    width: 100vw;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 0;
-}
+
 #mask {
-   background-color: rgba(0, 0, 0, 0.84);
+    background-color: rgba(0, 0, 0, 0.84);
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -119,9 +137,9 @@
 }
 
 #parallax1 {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.84), 
-      rgba(0, 0, 0, 0.84)
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.84), 
+    rgba(0, 0, 0, 0.84)
     ),
     url('./background.jpg');
 }
@@ -189,7 +207,7 @@ a:hover {
 }
 .box-shadowed {
     box-shadow: 2px 3px 10px 1px #3A3F45
- !important;
+    !important;
 }
 
 .submit-btn{
