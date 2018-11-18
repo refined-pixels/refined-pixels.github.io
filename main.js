@@ -44,6 +44,7 @@ function unflipChip() {
     chip8Content.style.display = "none";
     chip8.style.backgroundImage = "url('./chip8.jpg')"; 
 }
+
 linux.addEventListener("mouseover", flipLinux);
 pokemon.addEventListener("mouseover", flipPokemon);
 chip8.addEventListener("mouseover", flipChip);
