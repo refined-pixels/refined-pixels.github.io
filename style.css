@@ -1,0 +1,180 @@
+.primary {
+    color: #37A1F7 !important;
+}
+.secondary {
+    color: #F8F9FA !important;
+}
+
+.is128px {
+    font-size: 8rem;
+}
+.is64px {
+    font-size: 4rem;
+}
+
+#hidden {
+}
+.parallax {
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+#mask {
+   background-color: rgba(0, 0, 0, 0.84);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    background-color: rgba(0,0,0,0);
+}
+
+.container.flex-center {
+    padding-top: 150px;
+}
+
+.mup {
+    margin-top:200px;
+}
+.pad {
+    padding: 50px;
+}
+.flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rubik {
+    font-family: 'Rubik', sans-serif;
+}
+.karla {
+    font-family: 'Karla', sans-serif;
+}
+
+.box-normal{
+    background-color: rgba(0,0,0,0);
+    border: solid;
+    border-color: #37A1F7;
+    border-width: thin;
+    border-radius: 16px;
+}
+
+.navbar-item {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.padColumns {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.right-to-left {
+    border-width: 3px 3px 3px 0;
+    border-style: solid;
+    -webkit-border-image:linear-gradient(90deg, rgba(231,244,254,1) 0%, rgba(175,218,251,1) 25%, rgba(200,155,240,1) 47%, rgba(178,115,240,1) 73%, rgba(235,88,249,1) 99%);
+    -webkit-border-image:linear-gradient(90deg, rgba(231,244,254,1) 0%, rgba(175,218,251,1) 25%, rgba(200,155,240,1) 47%, rgba(178,115,240,1) 73%, rgba(235,88,249,1) 99%);
+    -moz-border-image:linear-gradient(90deg, rgba(231,244,254,1) 0%, rgba(175,218,251,1) 25%, rgba(200,155,240,1) 47%, rgba(178,115,240,1) 73%, rgba(235,88,249,1) 99%);
+    -o-border-image:linear-gradient(90deg, rgba(231,244,254,1) 0%, rgba(175,218,251,1) 25%, rgba(200,155,240,1) 47%, rgba(178,115,240,1) 73%, rgba(235,88,249,1) 99%);
+    border-image:linear-gradient(90deg, rgba(231,244,254,1) 0%, rgba(175,218,251,1) 25%, rgba(200,155,240,1) 47%, rgba(178,115,240,1) 73%, rgba(235,88,249,1) 99%);
+}
+.gradback {
+    background: linear-gradient(90deg, rgba(231,244,254,1) 0%, rgba(175,218,251,1) 25%, rgba(200,155,240,1) 47%, rgba(178,115,240,1) 73%, rgba(235,88,249,1) 99%);
+}
+
+.grad {
+    background-image: linear-gradient(90deg, rgba(231,244,254,1) 0%, rgba(175,218,251,1) 25%, rgba(200,155,240,1) 47%, rgba(178,115,240,1) 73%, rgba(235,88,249,1) 99%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.dark-grey {
+    color: #3A3F45;
+}
+
+#parallax1 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.84), 
+      rgba(0, 0, 0, 0.84)
+    ),
+    url('./background.jpg');
+}
+#parallax2 {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.84), 
+    rgba(0, 0, 0, 0.84)
+    ),
+    url('./background2.jpg');
+}
+#parallax3 {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.4)
+    ),
+    url('./poke background.jpg');
+}
+
+a:hover {
+    color: #37A1F7 !important;
+}
+
+#linux {
+    height: 600px;
+    background-color: rgba(256,256,256,0.1) !important;
+    background-size: cover;
+    background-position:center;
+    /*background-image:  url("./linux.png");*/
+    border: solid;
+    border-width: 1px;
+    border-color: #37A1F7 !important;
+    border-radius: 16px;
+
+
+}
+#pokemon {
+    height: 300px;
+    background-color: rgba(256,256,256,0.1) !important;
+    background-size: cover;
+    background-position:center;
+    background-image:  url("./riolu.jpg");
+    border-width: 2px;
+    border-color: #37A1F7 !important;
+    border-radius: 16px;
+
+}
+#chip-8{
+    height: 300px;
+    background-color: rgba(256,256,256,0.1) !important;
+    background-size: cover;
+    background-position:center;
+    background-image: url("./chip8.jpg");
+    border-width: 2px;
+    border-color: #37A1F7 !important;
+    border-radius: 16px;
+
+
+}
+
+.box-shadowed {
+    box-shadow: 2px 3px 10px 1px #3A3F45
+ !important;
+}
