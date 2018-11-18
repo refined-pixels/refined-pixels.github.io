@@ -214,18 +214,37 @@ a:hover {
     background-color: #37A1F7;
     color: white;
     border: #37A1F7;
-    width: 50rem;
 }
 
+.mup2 {
+    margin-top: 6rem;
+}
+
+#form-section {
+}
 .message{
-    margin-top: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .control{
-    margin-left: 17rem;
-    width: 50rem;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    font-size: 1.5rem;
+}
+.input {
+    border-radius: 16px;
+    padding: 32px;
+    font-size: 1.2rem;
+}
+.textarea {
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 1.2rem;
 }
 
+.submit-btn {
+    border-radius: 16px;
+    width: 100%;
+}

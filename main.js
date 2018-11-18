@@ -52,3 +52,23 @@ chip8.addEventListener("mouseover", flipChip);
 linux.addEventListener("mouseleave", unflipLinux);
 pokemon.addEventListener("mouseleave", unflipPokemon);
 chip8.addEventListener("mouseleave", unflipChip);
+
+//add alerts later
+function postForm() {
+    var name = document.getElementById('name-input').value
+    var email = document.getElementById('email-input').value
+    var text = document.getElementById('text-input').value
+    var service_id = 'gmail';
+    var template_id = 'template_en48kAjT';
+    var template_params = {
+        from_name:name,
+        reply_to:email,
+        message_html:text
+    };
+    emailjs.send(service_id,template_id,template_params);
+    if (name != "" && email != "" && text !="") {
+    } else {
+
+    }
+
+}

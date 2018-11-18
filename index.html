@@ -24,13 +24,13 @@
                     </div> 
                     <div id='navbarStuff' class="navbar-menu">
                         <div class="navbar-end secondary has-text-bold">
-                            <a class="navbar-item secondary has-text-bold">
+                            <a href='#expertise' class="navbar-item secondary has-text-bold">
                                 Expertise
                             </a> 
-                            <a class="navbar-item secondary has-text-bold">
+                            <a href='#projects' class="navbar-item secondary has-text-bold">
                                 Projects
                             </a> 
-                            <a class="navbar-item secondary has-text-bold">
+                            <a href="#contact"class="navbar-item secondary has-text-bold">
                                 Contact Us
                             </a> 
 
@@ -49,7 +49,7 @@
                 </div> 
 
             </section>
-            <div id='hidden' class="container is-fluid">
+            <div id='expertise' class="container is-fluid">
                 <div class="columns mup is-transparent">
                     <div class="column box-shadowed padColumns is-half has-background-white">
                         <h2 class="has-text-centered rubik is-size-1 is-size-2-mobile dark-grey">Web-Design</h2> 
@@ -82,7 +82,7 @@
 
         </section>
         <section class="parallax" id="parallax3">
-            <section class="section">
+            <section class="section" id="projects">
                 <div class="container">
                     <div class="tile is-ancestor">
                         <div class="tile is-6 is-parent">
@@ -100,15 +100,15 @@
                                 <div id='pokemon-content'>
 
                                     <h1 class="is-size-2 is-size-3-mobile rubik primary">Pokemon 2</h1> 
-                                    <p class='is-size-4 is-size-5-mobile karla secondary'> A minimalistic, efficient Linux Operating Distribution </p>
+                                    <p class='is-size-4 is-size-5-mobile karla secondary'> A collaborative effort to recreate the popular Pokemon series with 150 new pokemon. Written in PhaserJS. </p>
                                 </div>
 
                             </div> 
                             <div id="chip-8" class="tile is-child box box-shadowed has-text-centered flex-center">
                                 <div id='chip8-content'>
 
-                                    <h1 class=" is-size-2 is-size-3-mobile rubik primary">Bliss Beta</h1> 
-                                    <p class='is-size-4 is-size-5-mobile karla secondary'> A minimalistic, efficient Linux Operating Distribution </p>
+                                    <h1 class=" is-size-2 is-size-3-mobile rubik primary">Chip-8 emulator</h1> 
+                                    <p class='is-size-4 is-size-5-mobile karla secondary'> Low-level emulator of the Chip-8 architecture written in C++ with SFML. </p>
                                 </div>
 
                             </div>
@@ -118,37 +118,46 @@
             </section>
         </section>
         <section class="parallax" id="parallax2">
-            <section class="section ">
-                <div class="container mup has-text-centered">
-                    <h1 class="is-size-1 primary rubik has-text-centered">Contact Us</h1> 
+            <section id='contact'class="section ">
+                <div class="container has-text-centered flex-center karla">
+                   <section id='form-section' class="section">
+                       <h1 class="is-size-1 primary rubik has-text-centered">Contact Us</h1> 
                     <h2 class="is-size-2 secondary karla has-text-centered">for general enquiries,  commissions and offers</h2>
-
-                    <div class="field">
+ 
+                     <div class="mup2 field has-text-centered ">
                       <div class="control">
-                        <input class="input" type="text" placeholder="Name">
+                        <input id='name-input'class="input" type="text" placeholder="Name">
                       </div>
                     </div>
 
-                    <div class="field">
+                    <div class="field has-text-centered">
                       <div class="control">
-                        <input class="input" type="email" placeholder="Email">
+                        <input id='email-input'class="input" type="email" placeholder="Email">
                       </div>
                     </div>
 
-                    <div class="field">
+                    <div class="field has-text-centered">
                       <div class="control message">
-                        <textarea class="textarea" placeholder="How can we help?" rows=10></textarea>
+                        <textarea id='text-input'class="textarea" placeholder="How can we help?" rows=10></textarea>
                       </div>
                     </div>
 
-                    <div class="field">
+                    <div class="field has-text-centered">
                       <div class="control">
-                        <button class="button submit-btn">Submit</button>
+                        <button onclick="postForm()" class="button is-medium is-fullwidth submit-btn karla">Submit</button>
                       </div>
                     </div>
+                       
+                    </section>
             </section>
 
         </section>
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_MV72q6etui2Uyy3pVIaga");
+   })();
+</script>
         <script src="main.js" charset="utf-8"></script>
     </body>
 </html>
