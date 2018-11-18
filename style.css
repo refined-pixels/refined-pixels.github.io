@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
 .primary {
     color: #37A1F7 !important;
 }
