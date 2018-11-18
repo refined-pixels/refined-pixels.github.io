@@ -248,3 +248,7 @@ a:hover {
     border-radius: 16px;
     width: 100%;
 }
+
+.notification {
+    border-radius: 16px;
+}

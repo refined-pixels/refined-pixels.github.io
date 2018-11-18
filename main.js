@@ -1,3 +1,6 @@
+var received = " <div class='karla notification is-success'>Thanks! We received your message!</div>"
+var fillFields = " <div class='karla notification is-danger'>Please fill in all fields</div>"
+var errorMessage = "<div class='karla notification is-success'>Error: Message did not send</div>"
 var linux = document.getElementById("linux") 
 var linuxContent = document.getElementById("linux-content") 
 
@@ -8,6 +11,8 @@ var chip8 = document.getElementById("chip-8")
 var chip8Content = document.getElementById("chip8-content") 
 
 var parallax3 = document.getElementById("parallax3")
+
+var nots = document.getElementById("nots")
 
 function flipLinux() {
     linuxContent.style.display = "initial";
@@ -65,10 +70,17 @@ function postForm() {
         reply_to:email,
         message_html:text
     };
-    emailjs.send(service_id,template_id,template_params);
     if (name != "" && email != "" && text !="") {
+        emailjs.send(service_id,template_id,template_params).then(function(response) {
+        nots.innerHTML = received
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+        nots.innerHTML = errorMessage
+       console.log('FAILED...', error);
+    });
     } else {
-
+        nots.innerHTML = fillFields
     }
 
 }
+
