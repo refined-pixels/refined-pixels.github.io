@@ -4,13 +4,20 @@
 .secondary {
     color: #F8F9FA !important;
 }
+@media only screen and (max-width: 600px) {
 
-.is128px {
-    font-size: 8rem;
 }
-.is64px {
-    font-size: 4rem;
+@media only screen and (min-width: 600px) {
+    .is128px {
+        font-size: 8rem;
+    }
+    .is64px {
+        font-size: 4rem;
+    }
 }
+
+
+
 
 #hidden {
 }
