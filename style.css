@@ -127,8 +127,8 @@
 }
 #parallax3 {
     background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3), 
-    rgba(0, 0, 0, 0.4)
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
     ),
     url('./poke background.jpg');
 }
@@ -137,12 +137,13 @@ a:hover {
     color: #37A1F7 !important;
 }
 
+
 #linux {
     height: 600px;
-    background-color: rgba(256,256,256,0.1) !important;
+    background-color: rgba(0,0,0,0) !important;
     background-size: cover;
     background-position:center;
-    /*background-image:  url("./linux.png");*/
+    background-image:  url("./linux.png");
     border: solid;
     border-width: 1px;
     border-color: #37A1F7 !important;
@@ -152,28 +153,33 @@ a:hover {
 }
 #pokemon {
     height: 300px;
-    background-color: rgba(256,256,256,0.1) !important;
+    background-color: rgba(256,256,256,0) !important;
     background-size: cover;
     background-position:center;
     background-image:  url("./riolu.jpg");
-    border-width: 2px;
+    border:solid;
+    border-width: 1px;
     border-color: #37A1F7 !important;
     border-radius: 16px;
 
 }
 #chip-8{
     height: 300px;
-    background-color: rgba(256,256,256,0.1) !important;
+    background-color: rgba(256,256,256,0) !important;
     background-size: cover;
     background-position:center;
     background-image: url("./chip8.jpg");
-    border-width: 2px;
+    border:solid;
+    border-width: 1px;
     border-color: #37A1F7 !important;
     border-radius: 16px;
 
 
 }
 
+#chip8-content, #pokemon-content, #linux-content {
+    display: none;
+}
 .box-shadowed {
     box-shadow: 2px 3px 10px 1px #3A3F45
  !important;
